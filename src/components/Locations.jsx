@@ -26,7 +26,7 @@ const Locations = () => {
     return (
         <div>
             <h1>Rick and Morty Wiki</h1>
-            <input type="text" value={searchLocation} onChange={(e)=>setSearchLocation(e.target.value)}/>
+            <input placeholder='Type a location ID' type="text" value={searchLocation} onChange={(e)=>setSearchLocation(e.target.value)}/>
             <button onClick={getLocation}>Search</button>
             <div className='location'>
             <h2>Name: {location.name}</h2>
@@ -34,7 +34,7 @@ const Locations = () => {
             <p>Dimension: {location.dimension}</p>
             <p>Residents: {location.residents?.length}</p>
             </div>
-            <ul>
+            <ul className='character'>
                 {location.residents?.map((locat)=>(
                     <ResidentInfo locat={locat} key={locat}/>
                 ))}

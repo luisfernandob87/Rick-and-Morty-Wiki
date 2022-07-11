@@ -1,3 +1,4 @@
+body,
 .App {
   text-align: center;
   font-family: 'Gloria Hallelujah', cursive;
@@ -13,13 +14,36 @@
 }
 h1 {
   margin: 0;
-  padding: 20px;
+  padding-top: 20px;
 }
 li{
   list-style: none;
 }
 .location{
+  margin-top: 5px;
   background-color: rgb(23, 29, 41);
+}
+
+.card{
+  margin: 5px auto;
+  background-color: rgb(23, 29, 41);
+  border-radius: 5px;
+  max-width: fit-content;
+}
+button{
+  padding: 0px 15px 0 15px;
+  font-family: 'Gloria Hallelujah', cursive;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(149, 238, 149);
+  color: black;
+  margin-left: 2.5px;
+}
+input{
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 2.5px;
 }
 @media (min-width:800px) {
   .location{
@@ -27,12 +51,19 @@ li{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
+  .character{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (min-width:1024px) {
   .location{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-
     align-items: center;
+  }
+  .character{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }

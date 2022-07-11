@@ -13,13 +13,13 @@ const ResidentInfo = ({locat}) => {
     },[])
 
     return (
-        <div>
+            <div className='card'>           
             <li>{character.name}</li>
             <img src={character.image} alt="" />
             <p>Status: {character.status}</p>
             <p>Origin: {character.origin?.name}</p>
             <p>Episode: {character.episode?.length}</p>
-        </div>
+            </div>
     );
 };
 
