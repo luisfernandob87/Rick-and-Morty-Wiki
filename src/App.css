@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+  background-color: rgb(40, 50, 71);
+  color: white;
+}
+.header{
+  background-color:black;
+  height: 150px;
+}
+.header img{
+  height: 200px;
+}
+h1 {
+  margin: 0;
+  padding: 20px;
+}
+li{
+  list-style: none;
+}
+.location{
+  background-color: rgb(23, 29, 41);
+}
+@media (min-width:800px) {
+  .location{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+@media (min-width:1024px) {
+  .location{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    align-items: center;
+  }
+}
