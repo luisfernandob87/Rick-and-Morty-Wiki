@@ -15,8 +15,6 @@ const Locations = () => {
         .then(res => setLocation(res.data))
     },[])
 
-    console.log(location);
-
     const getLocation = () =>{
         axios.get(`https://rickandmortyapi.com/api/location/${searchLocation}`)
         .then(res => setLocation(res.data))
